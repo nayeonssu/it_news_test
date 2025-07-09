@@ -1,0 +1,68 @@
+/* --------------------------------헤더 시작 */
+body {margin:0 280px;}
+header {display:flex; width:100%; height:80px; justify-content:space-between;}
+/* --------------헤더 왼쪽 */
+/* 로고 */
+header .left {display:flex; align-items: center;}
+header .left h1 {margin-right: 40px;}
+header .left h1 img {width:195px;}
+/* nav */
+header .left nav {}
+header .left a {margin-right:35px; font-size:1.063rem; font-weight:500;}
+header .left a:last-child {margin-right:0px;}
+/* ---------------헤더 오른쪽 */
+header .right {display:flex; align-items:center; gap: 20px;}
+header .right #search {width:30px;}
+header .right #search img {width:24px;}
+header .right > a {font-size:0.938rem;}
+header .right .login {}
+header .right .join {}
+/* --------------------------------헤더 끝 */
+
+/* --------------------------------메인 시작 */
+.container {}
+/* 대제목 */
+.container .top {display:flex; justify-content:space-between; position: relative;}
+.container .top .bigtitle {}
+.container .top .bigtitle h3 {font-size:2.688rem; line-height:1.5; margin-bottom:40px;}
+.container .top .bigtitle > p {font-size:0.938rem;}
+.container .top .subscription {
+    position:absolute; right:0; bottom:0;
+    padding:0 20px;
+    height:39px;
+    border:1px solid #007BFF;
+    color: #007BFF;
+    border-radius:10px;
+    font-size:0.813rem;
+    font-weight:500;
+}
+.container .top .subscription:hover {background:#007BFF; color: #fff;}
+
+
+.container .card_info {
+    display:grid;
+    grid-template-areas:
+    'card1 card2' 
+    'card3';
+}
+.container .card_info .card {margin:40px 0; width:655px;}
+/* 중제목 + 좋아요 */
+.container .card_info .card .grandtitle {display:flex; align-items: center; justify-content: space-between; margin-bottom:24px;}
+.container .card_info .card .grandtitle h3 {font-size:1.375rem;}
+.container .card_info .card .grandtitle .like {}
+.container .card_info .card .grandtitle .like:hover {background:url(../images/icon_like_on.png);}
+.container .card_info .card .grandtitle .like img {}
+/* 내용 */
+.container .card_info .card p {font-size:1.125rem; line-height:1.7; margin:24px 0;}
+.container .card_info .card ul {margin:24px 0;}
+.container .card_info .card ul li {font-size:1.125rem; line-height:1.7;}
+.container .card_info .card > img {width:655px; height:480px;}
+.container .card_info .card .copyright {font-size:0.813rem;}
+
+/* 3번 카드 내용 */
+.card3 ul {}
+.card3 ul li {}
+.card3 ul li h4 {}
+.card3 ul li p {}
+
+/* --------------------------------메인 끝 */
