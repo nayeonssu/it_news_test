@@ -20,13 +20,13 @@ header .right .join {}
 /* --------------------------------헤더 끝 */
 
 /* --------------------------------메인 시작 */
-.container {}
+.info {}
 /* 대제목 */
-.container .top {display:flex; justify-content:space-between; position: relative;}
-.container .top .bigtitle {}
-.container .top .bigtitle h3 {font-size:2.688rem; line-height:1.5; margin-bottom:40px;}
-.container .top .bigtitle > p {font-size:0.938rem;}
-.container .top .subscription {
+.info .top {display:flex; justify-content:space-between; position: relative;}
+.info .top .bigtitle {margin:70px 0;}
+.info .top .bigtitle h3 {font-size:2.688rem; line-height:1.5; margin-bottom:40px;}
+.info .top .bigtitle > p {font-size:0.938rem;}
+.info .top .subscription {
     position:absolute; right:0; bottom:0;
     padding:0 20px;
     height:39px;
@@ -36,33 +36,43 @@ header .right .join {}
     font-size:0.813rem;
     font-weight:500;
 }
-.container .top .subscription:hover {background:#007BFF; color: #fff;}
+.info .top .subscription:hover {background:#007BFF; color: #fff;}
 
 
-.container .card_info {
+/* 컨테이너 설정 */
+/* .info .container {
     display:grid;
     grid-template-areas:
     'card1 card2' 
     'card3';
+    grid-template-columns:655px 655px;
+    grid-template-rows:945px 945px;
 }
-.container .card_info .card {margin:40px 0; width:655px;}
+.info .container .card1 {grid-area:card1}
+.info .container .card2 {grid-area:card2}
+.info .container .card3 {grid-area:card3} */
+
+/* 카드 */
+.info .container .card {margin:40px 0;}
 /* 중제목 + 좋아요 */
-.container .card_info .card .grandtitle {display:flex; align-items: center; justify-content: space-between; margin-bottom:24px;}
-.container .card_info .card .grandtitle h3 {font-size:1.375rem;}
-.container .card_info .card .grandtitle .like {}
-.container .card_info .card .grandtitle .like:hover {background:url(../images/icon_like_on.png);}
-.container .card_info .card .grandtitle .like img {}
+.info .container .card .grandtitle {display:flex; align-items: center; justify-content: space-between; margin-bottom:24px;}
+.info .container .card .grandtitle h3 {font-size:1.375rem;}
+.info .container .card .grandtitle .like {}
+.info .container .card .grandtitle .like:hover {background:url(../images/icon_like_on.png);}
+.info .container .card .grandtitle .like img {}
 /* 내용 */
-.container .card_info .card p {font-size:1.125rem; line-height:1.7; margin:24px 0;}
-.container .card_info .card ul {margin:24px 0;}
-.container .card_info .card ul li {font-size:1.125rem; line-height:1.7;}
-.container .card_info .card > img {width:655px; height:480px;}
-.container .card_info .card .copyright {font-size:0.813rem;}
+.info .container .card p {font-size:1.125rem; line-height:1.7; margin:24px 0;}
+.info .container .card ul {margin:24px 0;}
+.info .container .card ul li {font-size:1.125rem; line-height:1.7;}
+.info .container .card > img {width:655px; height:480px;}
+.info .container .card .copyright {font-size:0.813rem;}
 
 /* 3번 카드 내용 */
-.card3 ul {}
-.card3 ul li {}
-.card3 ul li h4 {}
-.card3 ul li p {}
+.container .card3 ul {}
+.container .card3 > ul > li {}
+.container .card3 > ul > li h4 {}
+.container .card3 > ul > li p {}
 
 /* --------------------------------메인 끝 */
+footer {margin:80px; text-align:center;}
+footer p {font-size:0.875rem;}
